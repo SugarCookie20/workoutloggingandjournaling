@@ -1,0 +1,28 @@
+# Java
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.log
+.mvn/wrapper/maven-wrapper.jar
+.DS_Store
+
+# Node
+node_modules/
+dist/
+.env*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Database
+data/
+*.mv.db
+*.trace.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo

@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: 0 0% 100%;
+  --color-foreground: 0 0% 0%;
+  --color-card: 0 0% 100%;
+  --color-card-foreground: 0 0% 0%;
+  --color-popover: 0 0% 100%;
+  --color-popover-foreground: 0 0% 0%;
+  --color-primary: 0 0% 0%;
+  --color-primary-foreground: 0 0% 100%;
+  --color-secondary: 0 0% 90%;
+  --color-secondary-foreground: 0 0% 0%;
+  --color-muted: 0 0% 90%;
+  --color-muted-foreground: 0 0% 40%;
+  --color-accent: 0 0% 90%;
+  --color-accent-foreground: 0 0% 0%;
+  --color-destructive: 0 84.2% 60.2%;
+  --color-destructive-foreground: 0 0% 98%;
+  --color-border: 0 0% 0%;
+  --color-input: 0 0% 0%;
+  --color-ring: 0 0% 0%;
+  --radius-lg: 0;
+  --radius-md: 0;
+  --radius-sm: 0;
+}
+
+@layer base {
+  * {
+    @apply border-black;
+  }
+  body {
+    @apply bg-white text-black font-mono;
+  }
+}
+
+.brutalist-card {
+  @apply border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] bg-white p-4 transition-all hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,1)];
+}
+
+.brutalist-button {
+  @apply border-2 border-black bg-white px-4 py-2 font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-x-[2px] active:translate-y-[2px];
+}
+
+.brutalist-input {
+  @apply border-2 border-black px-4 py-2 focus:outline-none focus:ring-0 focus:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)];
+}
